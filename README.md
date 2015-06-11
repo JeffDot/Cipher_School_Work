@@ -24,3 +24,9 @@ do some changes :
 nice shot....  
 ready to do the rest part .
 
+##date:2015-06-12 00:06:39
+###Complete:
+1. BlockDecryption
+2. add method 'IntToBinaryString' to BinaryString
+3. FileToBinaryString
+4. 
