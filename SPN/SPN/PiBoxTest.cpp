@@ -3,6 +3,9 @@
 
 using namespace std;
 
+
+
+
 const BinaryString testString1 = "0001110000100011";
 const BinaryString testResult1 = "0100010111010001";
 
@@ -49,6 +52,47 @@ void Test_pis() {
 	}
 	else {
 		cerr << "Error ,the result should be : \n" << testResult4 << " ,but actually is " << pis(testString4) << endl;
+		cin.get();
+		exit(1);
+	}
+
+	//diverse
+	cout << " v1->u1 - " << testResult1 << " -> " << testString1 << endl;
+	if (testString1 == pis(testResult1 ,true)) {
+		cout << "Right" << endl;
+	}
+	else {
+		cerr << "Error ,the result should be : \n" << testString1 << " ,but actually is " << pis(testResult1) << endl;
+		cin.get();
+		exit(1);
+	}
+
+	cout << " v2->u2 - " << testResult2 << " -> " << testString2 << endl;
+	if (testString2 == pis(testResult2, true)) {
+		cout << "Right" << endl;
+	}
+	else {
+		cerr << "Error ,the result should be : \n" << testString2 << " ,but actually is " << pis(testResult2) << endl;
+		cin.get();
+		exit(1);
+	}
+
+	cout << " v3->u3 - " << testResult3 << " -> " << testString3 << endl;
+	if (testString3 == pis(testResult3, true)) {
+		cout << "Right" << endl;
+	}
+	else {
+		cerr << "Error ,the result should be : \n" << testString3 << " ,but actually is " << pis(testResult3) << endl;
+		cin.get();
+		exit(1);
+	}
+
+	cout << " v4->u4 - " << testResult4 << " -> " << testString4 << endl;
+	if (testString4 == pis(testResult4, true)) {
+		cout << "Right" << endl;
+	}
+	else {
+		cerr << "Error ,the result should be : \n" << testString4 << " ,but actually is " << pis(testResult4) << endl;
 		cin.get();
 		exit(1);
 	}
