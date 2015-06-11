@@ -3,17 +3,24 @@
 
 using namespace std;
 
-BinaryString pis(BinaryString in) {
+BinaryString pis(BinaryString in ,bool isDiverse) {
+	BinaryString boxTmp[16] = { "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" };	
+	int count = 0;
+	for (; count < 16; count++) {
+		boxTmp[count] = (isDiverse) ? DIVERSE_PIS[count] : PIS[count];
+	}
 	BinaryString tmp = "";
 	BinaryString res = "";
-	int count = 0;
+	count = 0;
 	while (count < in.size()) {
 		tmp = in.substr(count, 4);
-		res += PIS[bsPartSum(tmp)];
+		res += boxTmp[bsPartSum(tmp)];
 		count += 4;
 	}
 	return res;
 }
+
+
 
 BinaryString pip(BinaryString in) {
 	BinaryString res = in;
