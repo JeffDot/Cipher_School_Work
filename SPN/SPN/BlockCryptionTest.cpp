@@ -30,7 +30,7 @@ void Test_BlockDecryption() {
 		exit(1);
 	}
 }
-
+/*
 int main() {
 	cout << "START TESTING ... \n";
 	cout << "TESTING ENCRYPTION ... \n";
@@ -44,4 +44,5 @@ int main() {
 
 	return 0;
 }
+*/
 
