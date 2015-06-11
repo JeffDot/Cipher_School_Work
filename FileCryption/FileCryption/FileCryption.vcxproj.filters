@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="FileToBinaryString">
+      <UniqueIdentifier>{a3419f0e-cd59-4119-89e2-7ab7e53c49f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SPN">
+      <UniqueIdentifier>{b764e324-08d6-40dc-95a2-c79e346702cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SPN\BlockCryption">
+      <UniqueIdentifier>{44999f0c-a67f-421e-91b6-8b1b984d5a30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SPN\KeyArray">
+      <UniqueIdentifier>{2fedb1f8-ef78-4f3d-a76f-49d1b6238bc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SPN\PiBox">
+      <UniqueIdentifier>{6709190b-2656-4fb2-9009-716adc25a247}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CTR">
+      <UniqueIdentifier>{ae67a871-4e9a-4574-8dc7-e30e1a18d933}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SPN\BinaryString">
+      <UniqueIdentifier>{3c2eaa05-b0c1-45cf-95b2-37d1af6dcb16}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BinaryString.h">
+      <Filter>SPN\BinaryString</Filter>
+    </ClInclude>
+    <ClInclude Include="FileToBinaryString.h">
+      <Filter>FileToBinaryString</Filter>
+    </ClInclude>
+    <ClInclude Include="FileCryption.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockCryption.h">
+      <Filter>SPN\BlockCryption</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyArray.h">
+      <Filter>SPN\KeyArray</Filter>
+    </ClInclude>
+    <ClInclude Include="PiBox.h">
+      <Filter>SPN\PiBox</Filter>
+    </ClInclude>
+    <ClInclude Include="CTR.h">
+      <Filter>CTR</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BinaryString.cpp">
+      <Filter>SPN\BinaryString</Filter>
+    </ClCompile>
+    <ClCompile Include="FileToBinaryStringTest.cpp">
+      <Filter>FileToBinaryString</Filter>
+    </ClCompile>
+    <ClCompile Include="FileToBinaryString.cpp">
+      <Filter>FileToBinaryString</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockCryption.cpp">
+      <Filter>SPN\BlockCryption</Filter>
+    </ClCompile>
+    <ClCompile Include="PiBox.cpp">
+      <Filter>SPN\PiBox</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyArrray.cpp">
+      <Filter>SPN\KeyArray</Filter>
+    </ClCompile>
+    <ClCompile Include="CTR.cpp">
+      <Filter>CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="CRTTest.cpp">
+      <Filter>CTR</Filter>
+    </ClCompile>
+    <ClCompile Include="FileCryption.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileCryptionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
