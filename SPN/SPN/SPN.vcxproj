@@ -79,15 +79,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="BinaryString.h" />
-    <ClInclude Include="BlockEncryption.h" />
+    <ClInclude Include="BlockCryption.h" />
     <ClInclude Include="KeyArray.h" />
     <ClInclude Include="PiBox.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BinaryString.cpp" />
     <ClCompile Include="BinaryStringTest.cpp" />
-    <ClCompile Include="BlockEncryption.cpp" />
-    <ClCompile Include="BlockEncryptionTest.cpp" />
+    <ClCompile Include="BlockCryption.cpp" />
+    <ClCompile Include="BlockCryptionTest.cpp" />
     <ClCompile Include="KeyArray.cpp" />
     <ClCompile Include="KeyArrayTest.cpp" />
     <ClCompile Include="PiBox.cpp" />
