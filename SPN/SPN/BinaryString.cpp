@@ -67,3 +67,33 @@ int bsPartSum(BinaryString op ,int partSize) {
 	}
 	return sum;
 }
+
+BinaryString AsciiToBinaryString(int in) {
+	if (in < 0 || in > 255) {
+		cerr << "unvaild int value(0~256)" << endl;
+		return "UNVAILD";
+	}
+	char tmp[ASCII_SIZE] = { '0', '0', '0', '0', '0', '0', '0', '0' };
+	int count = 0;
+	int modTmp = in % 2;
+	int divTmp = in / 2;
+	for (; count < ASCII_SIZE; count++) {
+		if (!divTmp) {
+			tmp[count] = '1';
+			break;
+		}
+		if (modTmp) {
+			tmp[count] = '1';
+		}
+		else {
+			tmp[count] = '0';
+		}
+		modTmp = divTmp % 2;
+		divTmp = divTmp / 2;
+	}
+	BinaryString res = "";
+	for (count = ASCII_SIZE - 1; count >= 0; count--) {
+		res += tmp[count];
+	}
+	return res;
+}

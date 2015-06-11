@@ -7,6 +7,8 @@ const int ARRAY_SIZE = 16;
 
 const int PART_DEFAULT = 4;
 
+const int ASCII_SIZE = 8;
+
 typedef string BinaryString;
 
 //vaild check
@@ -17,4 +19,7 @@ BinaryString bsXOR(BinaryString op1, BinaryString op2);
 
 //get part sum Operation
 int bsPartSum(BinaryString op , int partSize = PART_DEFAULT);
+
+BinaryString AsciiToBinaryString(int in);
+
 #endif

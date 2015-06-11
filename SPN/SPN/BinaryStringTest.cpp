@@ -11,6 +11,12 @@ const BinaryString testString5 = "11111111";
 const int			partSize1 = -1;
 const int			partSize2 = 4;
 
+const int asc2bsTest1 = 255;
+const BinaryString res1 = "11111111";
+const int asc2bsTest2 = 128;
+const BinaryString res2 = "10000000";
+const int asc2bsTest3 = -1;
+
 void Test_bsIsVaild() {
 	cout << "Right1 - " << testString1 << endl;
 	if (bsIsVaild(testString1)) {
@@ -121,6 +127,36 @@ void Test_bsPartSum() {
 		exit(1);
 	}
 }
+
+void Test_AsciiToBinaryString() {
+	cout << "Unvaild Value int : " << asc2bsTest3 << endl;
+	if ("UNVAILD" == AsciiToBinaryString(asc2bsTest3)) {
+		cout << "RIGHT!" << endl;
+	}
+	else {
+		cerr << "Can judge to be unvaild!\n";
+		cin.get();
+		exit(1);
+	}
+	cout << "Vaild Value int : " << asc2bsTest1 << endl;
+	if (res1 == AsciiToBinaryString(asc2bsTest1)) {
+		cout << "RIGHT!" << endl;
+	}
+	else {
+		cerr << "we want : " << res1 << "But we got : " << AsciiToBinaryString(asc2bsTest1) << endl;
+		cin.get();
+		exit(1);
+	}
+	cout << "Vaild Value int : " << asc2bsTest2 << endl;
+	if (res2 == AsciiToBinaryString(asc2bsTest2)) {
+		cout << "RIGHT!" << endl;
+	}
+	else {
+		cerr << "we want : " << res2 << "But we got : " << AsciiToBinaryString(asc2bsTest2) << endl;
+		cin.get();
+		exit(1);
+	}
+}
 /*
 int main() {
 	cout << "IS VAILD TEST : \n";
@@ -129,6 +165,8 @@ int main() {
 	Test_bsXOR();
 	cout << "BS PART SUM TEST : \n";
 	Test_bsPartSum();
+	cout << "ASCII TO BINARY STRING : \n";
+	Test_AsciiToBinaryString();
 	cout << "Over Test!" << endl;
 	cin.get();
 
