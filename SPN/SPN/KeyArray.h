@@ -3,7 +3,7 @@
 #include "BinaryString.h"
 #include <iostream>
 
-const int KEYSIZE = 32;
+const int KEY_SIZE = 32;
 
 using namespace std;
 

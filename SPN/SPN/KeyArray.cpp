@@ -4,7 +4,7 @@
 using namespace std;
 
 bool KeyIsVaild(BinaryString Key) {
-	if (Key.size() != KEYSIZE) {
+	if (Key.size() != KEY_SIZE) {
 		return false;
 	}
 	if (!bsIsVaild(Key)) {
