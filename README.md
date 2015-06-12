@@ -28,5 +28,10 @@ ready to do the rest part .
 ###Complete:
 1. BlockDecryption
 2. add method 'IntToBinaryString' to BinaryString
-3. FileToBinaryString
-4. 
+3. FileToBinaryString(still need to complete output to file method)
+4. CTR
+5. FileCryption  
+
+> BlockDecryption:
+> should use the diverse PIS box
+> the rest is simple ,
